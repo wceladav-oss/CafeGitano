@@ -50,3 +50,23 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card-producto {
+  background-color: #fdfaf7;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ebd9c8;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(78, 52, 46, 0.15);
+}
